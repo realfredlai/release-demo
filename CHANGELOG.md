@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.9.0...my-app-v1.10.0) (2024-03-25)
+
+
+### Features
+
+* feat for remix ([6302f01](https://github.com/realfredlai/release-demo/commit/6302f01bdef198de4a4540f164446af8733e7db6))
+* new feat for api ([385a11f](https://github.com/realfredlai/release-demo/commit/385a11f00095070840dd7588c8452a889a4f1220))
+
 ## [1.9.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.8.0...my-app-v1.9.0) (2024-03-25)
 
 
