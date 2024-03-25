@@ -26,3 +26,4 @@ jobs:
           # manifest-file: ../../.release-please-manifest.json
           # release-type: node
           default-branch: staging
+          target-branch: staging
