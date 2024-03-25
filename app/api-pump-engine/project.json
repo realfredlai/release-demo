@@ -1,0 +1,62 @@
+{
+  "name": "api-pump-engine",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api-pump-engine/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "main": "apps/api-pump-engine/src/index.ts",
+        "outputFileName": "index.ts",
+        "outputPath": "dist/apps/api-pump-engine",
+        "tsConfig": "apps/api-pump-engine/tsconfig.app.json",
+        "webpackConfig": "apps/api-pump-engine/webpack.config.js",
+        "compiler": "tsc",
+        "target": "node"
+      },
+      "configurations": {
+        "production": {
+          "extractLicenses": true,
+          "inspect": false,
+          "main": "apps/api-pump-engine/src/index.ts",
+          "optimization": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "api-pump-engine:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "api-pump-engine:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/api-pump-engine/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/api-pump-engine/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,37 @@
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="51"
+                  height="50"
+                  viewBox="0 0 51 50"
+                  fill="none"
+                >
+                  Ï
+                  <rect
+                    x="36.3086"
+                    y="15.0654"
+                    width="11.25"
+                    height="1.25"
+                    transform="rotate(135 36.3086 15.0654)"
+                    fill="white"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M36.7656 23.75V15V13.75H35.5156H26.7656V15H35.5156V23.75H36.7656Z"
+                    fill="white"
+                  />
+                  <rect
+                    x="14.082"
+                    y="35.3623"
+                    width="11.25"
+                    height="1.25"
+                    transform="rotate(-45 14.082 35.3623)"
+                    fill="white"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M13.625 26.6777V35.4277V36.6777H14.875H23.625V35.4277H14.875V26.6777H13.625Z"
+                    fill="white"
+                  />
+                </svg>

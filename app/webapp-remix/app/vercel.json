@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron-expire-soon",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron-expire-now",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="80"
+    height="80"
+    viewBox="0 0 80 80"
+    fill="none"
+>
+    <circle
+        cx="40"
+        cy="40"
+        r="40"
+        transform="rotate(180 40 40)"
+        fill="#F7F3E8"
+        fill-opacity="0.1"
+    />
+    <rect
+        x="55"
+        y="40.6562"
+        width="32"
+        height="2"
+        transform="rotate(180 55 40.6562)"
+        fill="white"
+    />
+    <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M45.6863 51.0002L55.5858 41.1007L57 39.6865L55.5858 38.2723L45.6863 28.3728L44.2721 29.787L54.1716 39.6865L44.2721 49.586L45.6863 51.0002Z"
+        fill="white"
+    />
+</svg>

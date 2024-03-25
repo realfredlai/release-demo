@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html[lang='ja'] {
+  /* ooof this is small - will show the design team... */
+  font-size: 13px !important;
+}
+
+html[lang='ko'] {
+  font-size: 15px !important;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-primary-bone;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  html {
+    @apply scroll-smooth;
+    scrollbar-width: none;
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 'red';
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+
+  @font-face {
+    font-family: 'Neue Plak';
+    src: url('../public/fonts/NeuePlak-Regular.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+
+  @font-face {
+    font-family: 'Neue Plak Extra Condense';
+    src: url('../public/fonts/NeuePlak-CondExtraBlack.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+
+  @font-face {
+    font-family: 'Neue Plak Bold Condense';
+    src: url('../public/fonts/NeuePlak-CondBold.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+
+  @font-face {
+    font-family: 'Neue Plak Bold';
+    src: url('../public/fonts/NeuePlak-Bold.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+
+  @font-face {
+    font-family: 'Parabole';
+    src: url('../public/fonts/Parabole.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../public/fonts/HelveticaNeue-Regular.ttf');
+    font-display: block;
+    ascent-override: 100%;
+  }
+}
+
+@layer components {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    height: 0.375rem;
+    background: transparent; /* Otherwise white in Chrome */
+
+    border-radius: 62.5rem;
+    border: 1px solid rgba(247, 243, 232, 0);
+    background: rgba(247, 243, 232, 0.1);
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  button:focus,
+  input[type='range']:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  input[type='range']::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 4rem;
+    background: #fe7b32;
+    cursor: pointer;
+  }
+
+  /* All the same stuff for Firefox */
+  input[type='range']::-moz-range-thumb {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 4rem;
+    background: #fe7b32;
+    cursor: pointer;
+  }
+
+  /* All the same stuff for IE */
+  input[type='range']::-ms-thumb {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 4rem;
+    background: #fe7b32;
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .text-shadow {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.card-stack {
+  position: relative;
+  min-height: 100vh;
+}
+
+.card-stack-item {
+  width: 100%;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.card-stack-item-none {
+  position: relative;
+  z-index: 87;
+}
+
+/* Color Picker Stylings */
+
+/* Custom Pointers Sizing */
+.custom-pointers .react-colorful__hue-pointer {
+  width: 2rem;
+  height: 2rem;
+}
+
+.custom-pointers .react-colorful__saturation-pointer {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Custom layout */
+.custom-layout .react-colorful {
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.custom-layout .react-colorful__saturation {
+  order: -1;
+  width: 100%;
+  height: 14rem;
+  border-radius: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.custom-layout .react-colorful__hue {
+  order: -1;
+  height: 0.75rem;
+  width: 100%;
+  border-radius: 0 !important;
+}
+
+.custom-layout .react-colorful__pointer {
+  border: 2px solid #f7f3e8 !important;
+}
+
+.custom-layout .react-colorful__pointer .react-colorful__hue-pointer {
+  border: solid #f7f3e8 !important;
+  background-color: #f7f3e8 !important;
+}
+
+.custom-layout .react-colorful__hue .react-colorful__pointer-fill {
+  background-color: #f7f3e8 !important;
+}
+
+/* add Reebok logo to FuturePass login modal  */
+.MuiDialog-container.MuiDialog-scrollPaper h3 {
+  line-height: 0.89;
+}
+.MuiDialog-container.MuiDialog-scrollPaper h3:before {
+  content: '';
+  width: 162px;
+  height: 75px;
+  display: block;
+  background: url('/images/logos/logo-reebok-header.svg') center center
+    no-repeat;
+  background-size: cover;
+  margin: 0 auto 20px;
+}
+.MuiDialog-root.MuiModal-root,
+.MuiBackdrop-root.MuiModal-backdrop {
+  background: none !important;
+  backdrop-filter: blur(0) !important;
+}
+
+/* legals */
+
+.legals a {
+  padding: 0 0 0 5px;
+  text-decoration: underline;
+}
+.legals a:hover {
+  text-decoration: none;
+}
+
+.legals strong,
+.legals bold,
+.legals h2 {
+  font-weight: bold;
+}
+
+.legals p {
+  margin: 24px 0;
+}
+
+.legals ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-top: 0.25rem;
+  padding-left: 1.75rem;
+}
+
+.legals ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.25rem;
+}
+
+.legals ol > li::before {
+  content: counters(item, '.') '. ';
+  display: table-cell;
+  padding-right: 0.5rem;
+}
+
+.legals ol > li ol > li::before {
+  content: counters(item, '.') ' ';
+}
+ol.alpha {
+  list-style-type: lower-alpha !important;
+  margin: 1rem 0;
+}
+
+ol.alpha > li::before {
+  content: '(' counter(item, lower-alpha) ')' !important;
+}
+ol.roman {
+  margin: 1rem 0;
+}
+ol.roman > li::before {
+  content: '(' counter(item, lower-roman) ')' !important;
+}
+ul.disc > li {
+  margin-left: 1.5rem;
+  list-style-type: disc !important;
+}
+ul.circle > li {
+  margin-left: 1.5rem;
+  list-style-type: circle !important;
+}
