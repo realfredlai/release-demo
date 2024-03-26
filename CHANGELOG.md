@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.11.0...my-app-v1.12.0) (2024-03-26)
+
+
+### Features
+
+* random txt to trigger v1.12 ([92fdf89](https://github.com/realfredlai/release-demo/commit/92fdf897d69ce2b2b37b8770d9e5ebd6e4842383))
+
 ## [1.11.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.10.0...my-app-v1.11.0) (2024-03-26)
 
 
