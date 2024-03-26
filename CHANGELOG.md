@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.1](https://github.com/realfredlai/release-demo/compare/my-app-v1.13.0...my-app-v1.13.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* fix to trigger ([10366b5](https://github.com/realfredlai/release-demo/commit/10366b5813c1e631b627a38b4311ae6fea94a973))
+
 ## [1.13.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.12.0...my-app-v1.13.0) (2024-03-26)
 
 
