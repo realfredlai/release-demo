@@ -1,6 +1,35 @@
 # Changelog
 
-## [1.11.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.10.0...my-app-v1.11.0) (2024-03-27)
+=======
+## [1.13.1](https://github.com/realfredlai/release-demo/compare/my-app-v1.13.0...my-app-v1.13.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* fix to trigger ([10366b5](https://github.com/realfredlai/release-demo/commit/10366b5813c1e631b627a38b4311ae6fea94a973))
+
+## [1.13.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.12.0...my-app-v1.13.0) (2024-03-26)
+
+
+### Features
+
+* refactor to trigger v1.12.2 ([03cbb67](https://github.com/realfredlai/release-demo/commit/03cbb6708cbf05e4dacf867af8b71c5ec5d245c4))
+* refactor to trigger v1.13 ([29284d2](https://github.com/realfredlai/release-demo/commit/29284d23b1fce94d12a31d4e76b32c92b3f2f613))
+
+
+### Bug Fixes
+
+* fix bug to trigger v1.13 ([c01f75e](https://github.com/realfredlai/release-demo/commit/c01f75ede5a367ebc82f7d0237df961a8d9dc1ec))
+* fix to trigger v1.13 ([a91ba9b](https://github.com/realfredlai/release-demo/commit/a91ba9b97c4c571ebcfce8ff7e45c971d324f1f9))
+
+## [1.12.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.11.0...my-app-v1.12.0) (2024-03-26)
+
+
+### Features
+
+* random txt to trigger v1.12 ([92fdf89](https://github.com/realfredlai/release-demo/commit/92fdf897d69ce2b2b37b8770d9e5ebd6e4842383))
+
+## [1.11.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.10.0...my-app-v1.11.0) (2024-03-26)
 
 
 ### Features
