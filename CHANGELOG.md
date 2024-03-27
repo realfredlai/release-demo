@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.10.0...my-app-v1.11.0) (2024-03-27)
+
+
+### Features
+
+* mint service ([6a22c12](https://github.com/realfredlai/release-demo/commit/6a22c1262f23cbf5a032c50d42b45ce64b8a8919))
+* pump engine logic ([dfa0d4f](https://github.com/realfredlai/release-demo/commit/dfa0d4f1052aa09914dda14c34fd75514f234bc3))
+
 ## [1.10.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.9.0...my-app-v1.10.0) (2024-03-25)
 
 
