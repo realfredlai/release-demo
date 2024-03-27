@@ -1,6 +1,14 @@
 # Changelog
 
 =======
+## [1.15.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.14.0...my-app-v1.15.0) (2024-03-27)
+
+
+### Features
+
+* abcdef ([bf1ff85](https://github.com/realfredlai/release-demo/commit/bf1ff85d8371f6f78127cf11e139070eb4c378b7))
+* ghd ([f4492df](https://github.com/realfredlai/release-demo/commit/f4492dffe63b253463bfa5c29cf08cfd0cd704f7))
+
 ## [1.14.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.13.1...my-app-v1.14.0) (2024-03-27)
 
 
