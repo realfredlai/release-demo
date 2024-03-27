@@ -1,6 +1,13 @@
 # Changelog
 
 =======
+## [1.14.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.13.1...my-app-v1.14.0) (2024-03-27)
+
+
+### Features
+
+* feat to trigger ([8855b1d](https://github.com/realfredlai/release-demo/commit/8855b1d9b1e3633e8ebd0e62cb93bd9c685ddd34))
+
 ## [1.13.1](https://github.com/realfredlai/release-demo/compare/my-app-v1.13.0...my-app-v1.13.1) (2024-03-26)
 
 
