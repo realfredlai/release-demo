@@ -1,6 +1,15 @@
 # Changelog
 
 =======
+## [1.16.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.15.0...my-app-v1.16.0) (2024-04-03)
+
+
+### Features
+
+* feat1 ([fd72320](https://github.com/realfredlai/release-demo/commit/fd72320a715dbe60e2af282f3ae8dcbbec193507))
+* new log out ([88df1e9](https://github.com/realfredlai/release-demo/commit/88df1e9353b7e952e65d901a9b380c34b096027a))
+* new login ([e91a47b](https://github.com/realfredlai/release-demo/commit/e91a47bdaeaffea5d238ce328d7d3d93e38358d1))
+
 ## [1.15.0](https://github.com/realfredlai/release-demo/compare/my-app-v1.14.0...my-app-v1.15.0) (2024-03-27)
 
 
